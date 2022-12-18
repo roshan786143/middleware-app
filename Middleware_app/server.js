@@ -31,7 +31,7 @@ app.use((req,res,next)=>{
 
 app.use((req,res)=>{
     res.status(404);
-    res.send("<h2>404-File Not Found!</h2>");
+    res.sendFile('/home/roshan/Desktop/practice/dailyTuition/projects/middleware_app/Middleware_app/static/fog-error-page-990x619.jpg');
 })
 
 app.listen(port,()=>console.log('hey,the server has started'));
